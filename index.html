@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="VAB Tech is a French technology company creating software products for businesses and consumers.">
+  <meta name="description" content="VAB Tech is a registered French technology company developing commercial software products, incorporated in Paris.">
 
-  <title>VAB Tech — Technology Company</title>
+  <title>VAB Tech — French Technology Company</title>
 
   <link rel="canonical" href="https://vabtech.xyz/">
   <link rel="icon" href="/public/logo-square.png" type="image/png">
@@ -14,70 +14,147 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vabtech.xyz/">
-  <meta property="og:title" content="VAB Tech — Technology Company">
-  <meta property="og:description" content="VAB Tech is a French technology company creating software products for businesses and consumers.">
+  <meta property="og:title" content="VAB Tech — French Technology Company">
+  <meta property="og:description" content="VAB Tech is a registered French technology company developing commercial software products, incorporated in Paris.">
   <meta property="og:image" content="https://vabtech.xyz/public/logo-16x9.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="VAB Tech — Technology Company">
-  <meta name="twitter:description" content="VAB Tech is a French technology company creating software products for businesses and consumers.">
+  <meta name="twitter:title" content="VAB Tech — French Technology Company">
+  <meta name="twitter:description" content="VAB Tech is a registered French technology company developing commercial software products, incorporated in Paris.">
   <meta name="twitter:image" content="https://vabtech.xyz/public/logo-16x9.jpg">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container">
-      <a href="/" class="header-brand">
-        <picture>
-          <source srcset="/public/logo.svg" type="image/svg+xml">
-          <img src="/public/logo-square.png" alt="VAB Tech logo" class="logo" width="1472" height="832">
-        </picture>
-        <span class="company-name">VAB Tech</span>
-      </a>
-    </div>
+  <header>
+    <nav class="nav" aria-label="Site navigation">
+      <div class="nav__inner">
+        <a href="/" class="nav__brand" aria-label="VAB Tech — return to top">
+          <picture>
+            <source srcset="/public/logo.svg" type="image/svg+xml">
+            <img src="/public/logo-square.png" alt="VAB Tech" width="1472" height="832" class="nav__logo">
+          </picture>
+          <span class="nav__name">VAB Tech</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="#products" class="nav__link">Products</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#legal" class="nav__link">Legal</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <main>
 
     <section class="hero" aria-labelledby="hero-heading">
-      <div class="container">
-        <h1 id="hero-heading">We build SaaS products.</h1>
-        <p class="hero-sub">VAB Tech is a French technology company creating software products for businesses and consumers.</p>
+      <div class="hero__texture" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Paris, France</p>
+          <h1 id="hero-heading" class="hero__title">Software<br>built in Paris.</h1>
+          <p class="hero__sub">VAB Tech is a registered French technology company developing and operating commercial software products.</p>
+          <div class="hero__actions">
+            <a href="#legal" class="btn btn--primary">Company details</a>
+            <a href="#products" class="btn btn--ghost">Our products</a>
+          </div>
+        </div>
+        <div class="hero__mark" aria-hidden="true">
+          <div class="hero__logo-frame">
+            <picture>
+              <source srcset="/public/logo.svg" type="image/svg+xml">
+              <img src="/public/logo-square.png" alt="" width="1472" height="832" class="hero__logo-img">
+            </picture>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section" id="products" aria-labelledby="products-heading">
       <div class="container">
-        <h2 id="products-heading">Products</h2>
-        <div class="product-card">
-          <h3>Pikvox</h3>
-          <p>Pikvox is an upcoming SaaS product built by VAB Tech, designed to bring innovative voice and media capabilities to businesses. Currently in development and coming soon.</p>
-          <a href="https://pikvox.fr" rel="noopener noreferrer external" class="product-link">Visit pikvox.fr &rarr;</a>
+        <div class="section__head">
+          <h2 id="products-heading" class="section__title">Products</h2>
         </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card__top">
+              <h3 class="card__name">Pikvox</h3>
+              <span class="pill">In development</span>
+            </div>
+            <p class="card__desc">A voice and media SaaS platform designed to bring scalable audio and media capabilities to businesses.</p>
+            <a href="https://pikvox.fr" rel="noopener noreferrer external" class="card__link">
+              Visit pikvox.fr
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true" focusable="false">
+                <path d="M2 6.5h9M7 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </article>
+        </div>
+        <p class="section__footnote">More products in development.</p>
       </div>
     </section>
 
-    <section class="section" id="about" aria-labelledby="about-heading">
+    <section class="section section--alt" id="about" aria-labelledby="about-heading">
       <div class="container">
-        <h2 id="about-heading">About</h2>
-        <p>VAB Tech is a French technology company and the parent entity behind the products and services listed on this page. This website exists to provide transparent corporate information for third-party verification, business partners, and KYB (Know Your Business) processes. All products developed and operated by VAB Tech are listed here.</p>
+        <div class="section__head">
+          <h2 id="about-heading" class="section__title">About</h2>
+        </div>
+        <p class="section__body">VAB Tech is the corporate entity behind the products listed on this page. We develop and operate commercial software products from Paris, France. This website is published to support business transparency and third-party verification — including KYB (Know Your Business) processes conducted by financial institutions, payment providers, and marketplaces.</p>
+      </div>
+    </section>
+
+    <section class="section section--legal" id="legal" aria-labelledby="legal-heading">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="legal-heading" class="section__title">Legal information</h2>
+          <p class="section__subtitle">Published in accordance with French law (Loi pour la Confiance dans l'Économie Numérique — LCEN).</p>
+        </div>
+        <dl class="legal-dl">
+          <div class="legal-dl__row">
+            <dt class="legal-dl__term">Legal name</dt>
+            <dd class="legal-dl__def">VAB Tech</dd>
+          </div>
+          <div class="legal-dl__row">
+            <dt class="legal-dl__term">Legal form</dt>
+            <dd class="legal-dl__def">SASU — Société par Actions Simplifiée Unipersonnelle</dd>
+          </div>
+          <div class="legal-dl__row">
+            <dt class="legal-dl__term">SIRET / RCS</dt>
+            <dd class="legal-dl__def legal-dl__def--mono">944 237 825 — R.C.S. Paris</dd>
+          </div>
+          <div class="legal-dl__row">
+            <dt class="legal-dl__term">Registered address</dt>
+            <dd class="legal-dl__def">149 avenue du Maine, 75014 Paris, France</dd>
+          </div>
+          <!-- TODO: Share capital — add line item when known -->
+          <!-- TODO: Date of incorporation — add line item when known -->
+          <!-- TODO: Publishing director — add line item when known -->
+          <!-- TODO: VAT number (Numéro de TVA intracommunautaire) — add line item when known -->
+        </dl>
       </div>
     </section>
 
     <section class="section" id="contact" aria-labelledby="contact-heading">
       <div class="container">
-        <h2 id="contact-heading">Contact</h2>
-        <p>For general enquiries or business correspondence, please reach us at <a href="mailto:contact@vabtech.xyz">contact@vabtech.xyz</a>.</p>
+        <div class="section__head">
+          <h2 id="contact-heading" class="section__title">Contact</h2>
+        </div>
+        <p class="section__body">For general enquiries, partnership, or verification requests.</p>
+        <a href="mailto:contact@vabtech.xyz" class="contact-email">contact@vabtech.xyz</a>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p class="footer-legal">VAB Tech — SASU — SIRET 944 237 825 R.C.S. Paris — 149 avenue du Maine, 75014 Paris</p>
-<p class="footer-copy">&copy; 2026 VAB Tech. All rights reserved.</p>
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__identity">VAB Tech — SASU — Paris, France</p>
+      <div class="footer__meta">
+        <span>Last updated: April 2026</span>
+        <span class="footer__dot" aria-hidden="true">&middot;</span>
+        <span>&copy; 2026 VAB Tech</span>
+      </div>
     </div>
   </footer>
 
