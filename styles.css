@@ -156,10 +156,6 @@ a:focus-visible {
   padding-bottom: 2.5rem;
 }
 
-.section--legal .container {
-  /* inherits container max-width */
-}
-
 .legal-note {
   font-size: 0.875rem;
   color: #6b7280;
