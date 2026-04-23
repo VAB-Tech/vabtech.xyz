@@ -148,53 +148,24 @@ a:focus-visible {
   font-weight: 600;
 }
 
-/* ----- Legal Section ----- */
-
-.section--legal {
-  background-color: #f9fafb;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.legal-note {
-  font-size: 0.875rem;
-  color: #6b7280;
-  margin-bottom: 1.25rem;
-}
-
-.legal-list {
-  font-size: 0.875rem;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.5rem 1.5rem;
-  align-items: baseline;
-}
-
-.legal-list dt {
-  font-weight: 600;
-  color: #374151;
-  white-space: nowrap;
-}
-
-.legal-list dd {
-  color: #4b5563;
-}
-
-.todo {
-  color: #9ca3af;
-  font-style: italic;
-}
-
 /* ----- Footer ----- */
 
 .site-footer {
+  border-top: 1px solid #e5e7eb;
   padding: 2rem 0;
   background-color: #f9fafb;
 }
 
-.site-footer p {
-  font-size: 0.875rem;
+.footer-legal {
+  font-size: 0.8125rem;
   color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.footer-copy {
+  font-size: 0.8125rem;
+  color: #9ca3af;
+  margin-top: 0.75rem;
 }
 
 /* ----- Responsive (< 640px) ----- */
@@ -214,18 +185,5 @@ a:focus-visible {
 
   .product-card {
     max-width: 100%;
-  }
-
-  .legal-list {
-    grid-template-columns: 1fr;
-    gap: 0.25rem 0;
-  }
-
-  .legal-list dt {
-    margin-top: 0.75rem;
-  }
-
-  .legal-list dt:first-child {
-    margin-top: 0;
   }
 }
