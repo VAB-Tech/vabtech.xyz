@@ -11,7 +11,7 @@
   --c-blue:        #2B7BC6;
   --c-blue-hover:  #1F63A8;
   --c-blue-subtle: #EBF4FD;
-  --c-orange:      #E6611C;
+  --c-orange:      #C24E0F;
   --c-navy:        #1A2B3F;
 
   /* Grayscale ramp */
@@ -72,6 +72,7 @@
     --c-blue-hover:  #7BBCF0;
     --c-blue-subtle: #112032;
     --c-navy:        #E2EAF4;
+    --c-orange:      #E6611C;
   }
 }
 
@@ -112,6 +113,26 @@ a:focus-visible {
   outline: 2px solid var(--c-blue);
   outline-offset: 3px;
   border-radius: 3px;
+}
+
+/* === Skip-to-content =========================================== */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.625rem 1.25rem;
+  background: var(--c-blue);
+  color: #fff;
+  font-size: var(--t-sm);
+  font-weight: 600;
+  border-radius: 0 0 6px 6px;
+  text-decoration: none;
+  transition: top 120ms ease;
+}
+.skip-link:focus {
+  top: 0;
 }
 
 /* === Layout helpers ============================================ */
@@ -198,6 +219,34 @@ a:focus-visible {
   outline: 2px solid var(--c-blue);
   outline-offset: 2px;
   color: var(--text);
+}
+
+.nav__lang {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--border);
+  font-size: var(--t-xs);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.nav__lang-active {
+  color: var(--text);
+}
+.nav__lang-sep {
+  color: var(--text-subtle);
+}
+.nav__lang-link {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.nav__lang-link:hover { color: var(--link); }
+.nav__lang-link:focus-visible {
+  outline: 2px solid var(--c-blue);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 @media (max-width: 639px) {
@@ -425,6 +474,9 @@ a:focus-visible {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.25rem;
 }
+.card-grid > .card:only-child {
+  max-width: 360px;
+}
 
 .card {
   background: var(--bg);
@@ -470,9 +522,9 @@ a:focus-visible {
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  background: rgba(230, 97, 28, 0.12);
+  background: rgba(194, 78, 15, 0.12);
   color: var(--c-orange);
-  border: 1px solid rgba(230, 97, 28, 0.2);
+  border: 1px solid rgba(194, 78, 15, 0.2);
   white-space: nowrap;
 }
 
@@ -636,4 +688,15 @@ a:focus-visible {
 
 .footer__dot {
   opacity: 0.4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
